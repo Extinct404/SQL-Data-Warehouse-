@@ -51,25 +51,7 @@ The data architecture for this project follows Medallion Architecture Bronze, Si
 * Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
   
-Repository Structure
-data-warehouse-project/
-│
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/                               # Project documentation and architecture details
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
-│
-├── tests/                              # Test scripts and quality files
-│
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+The **data-warehouse-project** repository is organized into several key directories and files to ensure efficient data management and project structure. The **datasets/** folder contains raw datasets sourced from ERP and CRM systems, serving as the foundation for data processing. The **docs/** directory holds project documentation, including architecture details and a **naming-conventions.md** file that outlines consistent guidelines for naming tables, columns, and files to maintain uniformity. The **scripts/** folder is divided into three subfolders: **bronze/** for scripts that handle data extraction and loading of raw data, **silver/** for cleaning and transforming the data, and **gold/** for creating analytical models. To ensure data integrity, the **tests/** directory contains test scripts and quality assurance files. The root directory includes key files such as **README.md** for an overview of the project and usage instructions, **LICENSE** for repository licensing information, **.gitignore** to specify files and directories Git should ignore, and **requirements.txt**, which lists the dependencies and requirements needed to run the project smoothly.
 
 
 License
